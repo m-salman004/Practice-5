@@ -58,3 +58,11 @@ document.getElementById("switch").onclick = function() {
             break;
     }
 }
+document.getElementById("keepAsk").onclick = function() {
+    var getName = prompt("Enter Your Name");
+    do {
+        console.log("Please Enter Valid Value!")
+
+    } while (getName === null || getName == "");
+    document.getElementById("outPut").innerHTML = "Your Name is" + " " + getName;
+}
