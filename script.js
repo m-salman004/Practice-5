@@ -27,3 +27,34 @@ document.getElementById("ifElse").onclick = function() {
         alert("It is SomeOther Day!")
     }
 }
+
+document.getElementById("switch").onclick = function() {
+    var now = new Date();
+    var today = now.getDay();
+    switch (today) {
+        case 0:
+            document.getElementById("outPut").innerHTML = "Sunday";
+            break;
+        case 1:
+            document.getElementById("outPut").innerHTML = "Monday";
+            break;
+        case 2:
+            document.getElementById("outPut").innerHTML = "Tuesday";
+            break;
+        case 3:
+            document.getElementById("outPut").innerHTML = "Wednesday";
+            break;
+        case 4:
+            document.getElementById("outPut").innerHTML = "Thursday";
+            break;
+        case 5:
+            document.getElementById("outPut").innerHTML = "Friday";
+            break;
+        case 6:
+            document.getElementById("outPut").innerHTML = "Saturday";
+            break;
+        default:
+            document.getElementById("outPut").innerHTML = "It's some other day";
+            break;
+    }
+}
