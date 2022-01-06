@@ -66,3 +66,6 @@ document.getElementById("keepAsk").onclick = function() {
     } while (getName === null || getName == "");
     document.getElementById("outPut").innerHTML = "Your Name is" + " " + getName;
 }
+document.getElementById("clear").onclick = function() {
+    document.getElementById("outPut").innerHTML = "";
+}
